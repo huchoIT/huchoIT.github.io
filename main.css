@@ -1,0 +1,89 @@
+/* -------------------------[ 01. Default ]------------------------- */
+@font-face {
+    font-family: 'Noto Sans Korean';
+    src: url('./font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Noto Sans Korean';
+}
+
+body {
+    margin: 0;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(15,20,25);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    border: 1.6px solid rgb(50,55,65);
+}
+
+/* --------------------------[ 02. Frame ]-------------------------- */
+/* Header Layout */
+header {
+    height: 64px;
+    background-color: black;
+    border-bottom: 1.3px solid rgb(50,55,65);
+}
+
+/* Main Layout */
+#main {
+    display:flex;
+    position: relative;
+    width: 100%; height: 3000px;
+}
+
+/* ------------------------- */
+/* Main-Sidebar */
+#main-sidebar {
+    position: relative;
+    width: 335px; height: 100%;
+    background-color: rgb(15,20,25);
+    border-right: 1.3px solid rgb(50,55,65);
+}
+
+/* Main-Content */
+#main-content {
+    position: relative;
+    width: calc(100% - 335px); height: 100%;
+    background-color: black;
+}
+
+/* -----------------------[ 03. Main-SIDEBAR ]---------------------- */
+#main-sidebar nav {
+    margin:50px 25px;
+    font-size:14px; color: white;
+}
+
+#main-sidebar ul {
+    margin: 0px 0px 18px 0px; padding:0;
+}
+
+#main-sidebar li {
+    margin-left:0;
+    list-style:none;
+}
+
+#main-sidebar .sidebar-maintitle{
+    font-weight:bold;
+    height:40px;
+}
+    
+#main-sidebar .sidebar-subtitle{
+    display:flex;
+    height:28px;
+}
+
+#main-sidebar .sidebar-icon{
+    width:24px;
+}
+#main-sidebar .sidebar-icon img{
+    position:relative;
+    top: 50%; left:0%; transform: translate(0%,-75%);
+    width:15.8px;
+    border-radius: 15px;
+}
